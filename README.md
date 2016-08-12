@@ -9,10 +9,11 @@ python templates.py **NameOfScreen**
 ## Output
 
 This will create a folder called **NameOfScreen** filled with the following files:
-\n\t 1. **NameofScreen**Activity.java
-\n\t 2. **NameofScreen**Contract.java
-\n\t 3. **NameofScreen**Presenter.java
-\n\t 4. **NameofScreen**Injecotr.java
-\n\t 5. **NameofScreen**Scope.java
+
+1. **NameofScreen**Activity.java
+2. **NameofScreen**Contract.java
+3. **NameofScreen**Presenter.java
+4. **NameofScreen**Injecotr.java
+5. **NameofScreen**Scope.java
 
 It is then necessary to move these files into your project and ensure the imports are handled properly. 
