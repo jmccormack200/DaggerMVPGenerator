@@ -31,8 +31,7 @@ def makeFileFromTemplate(inputFileName, directory, file):
 	outputfile.close()
 
 def makeNewFileName(upperFileName, file):
-	basefilename = str(file)
-
+	basefilename = file.replace("template", "", 1)
 	return upperFileName + "/" + upperFileName + basefilename
 
 if __name__ == "__main__":
