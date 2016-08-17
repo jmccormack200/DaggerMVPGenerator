@@ -10,7 +10,7 @@ public class ${filename}Injector {
         if (${lowercaseFilename}Component != null) {
             return ${lowercaseFilename}Component;
         }
-        return Injector.getApplicationComponent().plus(new ${lowercaseFilename}Module());
+        return Injector.getApplicationComponent().plus(new ${filename}Module());
     }
 
     static void set${filename}Component(
