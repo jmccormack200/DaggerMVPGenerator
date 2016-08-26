@@ -13,8 +13,7 @@ public class ${filename}Injector {
         return Injector.getApplicationComponent().plus(new ${filename}Module());
     }
 
-    static void set${filename}Component(
-            ${filename}Component ${lowercaseFilename}Component) {
+    static void set${filename}Component(${filename}Component ${lowercaseFilename}Component) {
         ${filename}Injector.${lowercaseFilename}Component = ${lowercaseFilename}Component;
     }
 
