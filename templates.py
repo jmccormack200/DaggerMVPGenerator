@@ -2,8 +2,8 @@ from string import Template
 import os
 import sys
 
-def template(inputFileName):
-	root_dir = 'templates'
+def template(inputFileName, simple):
+	root_dir = 'templates-simple' if simple else 'templates'
 	try:
 		os.mkdir(inputFileName[0].upper() + inputFileName[1:])
 	except:
@@ -35,4 +35,8 @@ def makeNewFileName(upperFileName, file):
 	return upperFileName + "/" + upperFileName + basefilename
 
 if __name__ == "__main__":
-	template(sys.argv[1])
+  if len(sys.argv) == 2:
+  	template(sys.argv[1], False)
+  elif len(sys.argv) == 3 and sys.argv[1] == '-s':
+  	template(sys.argv[2], True)
+
