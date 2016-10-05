@@ -1,4 +1,4 @@
-interface ${filename}Contract {
+public interface ${filename}Contract {
 
     interface View extends BaseViewInterface {
     }
