@@ -2,7 +2,7 @@ public class ${filename}Presenter extends BasePresenter implements ${filename}Co
 
     private ${filename}Contract.View view;
 
-    ${filename}Presenter() {
+    public ${filename}Presenter() {
         Injector.getPresenterComponent().inject(this);
     }
 
