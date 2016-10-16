@@ -1,3 +1,11 @@
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+
+import com.americanwell.teva.BaseActivity;
+
+import butterknife.ButterKnife;
+
 public class ${filename}Activity extends BaseActivity<${filename}Contract.Presenter>
         implements ${filename}Contract.View {
 
